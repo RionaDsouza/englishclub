@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dimplesalins</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg fixed-top shadow rounded">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo5.png" width="120" class="d-inline-block align-top" alt="" loading="lazy">
+							
+					</a>
+						<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						    <ul class="nav navbar-nav ml-auto">
+						      <li class="nav-item active">
+						        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+						      </li>
+						      <li class="nav-item">
+						        <a class="nav-link" href="#gallery">Gallery</a>
+						      </li>
+						      <li class="nav-item">
+						        <a class="nav-link" href="#contact">Contact</a>
+						      </li>
+						      <li class="nav-item">
+						        <a class="nav-link" href="#courses">
+						          Courses Offered
+						        </a>
+						      </li>
+						    </ul>
+						</div>
+					
+			</nav>
+		</div>
+	</header>
+
+
+<!--	 -->
+	
+
+	<div class="jumbotron">
+		<!--
+		<div class="alert alert-primary position-relative" role="alert">
+			<marquee behavior="scroll" direction="left">
+				A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+		    </marquee>
+		</div>
+		
+	  <h1 class="display-4 main_head">Hello, world!</h1>
+	  -->
+
+		<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+		<hr class="my-4">
+		<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+
+		<button class="main_button" id="myBtn">Enquiry</button>
+		<div id="myModal" class="modal">
+		  <div class="modal-content form-popup" id="myForm">
+		    <span class="close">x</span>
+			<form class="form-container" >
+				Register and we will contact you
+				<p>
+					<label for="name">Name</label>
+				    <input type="text" id="name" required>
+				</p>
+				<p>
+					<label for="pnum">Phone Number</label>
+				    <input type="tel" id="pnum" maxlength="10" minlength="10" required>
+				</p>
+				<p>
+					<label for="email">Email address</label>
+					    <input type="email" id="email" required>
+					    <small id="emailHelp" class="form-text text-muted">
+					    	We'll not share your details with anyone else.
+						</small>
+				</p>
+				  <button type="submit" class="btn main_button">Submit</button>
+			</form>
+		  </div>
+		</div>
+    </div>
+
+	<div class="container-fluid courses" id="courses">
+		<div class="row courses_row text-center">
+			<div class="col-md-4">
+				<div class="card text-center">
+				  <div class="card-body" id="card1">
+				  	<div>
+						<img src="images/panda.png" class="course_icon">
+					</div>
+				    <h5 class="card-title">Special title treatment</h5>
+				    <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card text-center">
+				  <div class="card-body" id="card1">
+				  	<div>
+						<img src="images/dog.png" class="course_icon">
+					</div>
+				    <h5 class="card-title">Special title treatment</h5>
+				    <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card text-center">
+				  <div class="card-body" id="card1">
+				  	<div>
+						<img src="images/giraffe.png" class="course_icon">
+					</div>
+				    <h5 class="card-title">Special title treatment</h5>
+				    <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+			</div>
+			
+		</div>	  
+	  </div>
+
+
+	<div class="container-fluid gallery" id="gallery">
+		<h1 class="gallery_head">
+			Photo Album
+		</h1>
+		<div class="row text-center">
+			<div class="gallery_inner col-md-4">
+				<a href="gallery_categories.html">
+					<div class="card text-center">
+					  <div class="card-gallery">
+					    <h5 class="card-title">Special title treatment</h5>
+					    <img src="images/child.jpg" class="img-fluid">
+					  </div>
+					</div>
+				</a>
+			</div>
+			<div class="gallery_inner col-md-4">
+				<a href="gallery_categories.html">
+					<div class="card text-center">
+					  <div class="card-gallery">
+					    <h5 class="card-title">Special title treatment</h5>
+					    <img src="images/child.jpg" class="img-fluid">
+					  </div>
+					</div>
+				</a>
+			</div>
+			<div class="gallery_inner col-md-4">
+				<a href="gallery_categories.html">
+					<div class="card text-center">
+					  <div class="card-gallery">
+					    <h5 class="card-title">Special title treatment</h5>
+					    <img src="images/child.jpg" class="img-fluid">
+					  </div>
+					</div>
+				</a>
+			</div>
+		</div>	  
+	  </div>
+
+	<hr>
+
+	<div class="container">
+		<h1 class="text-left">WHAT PARENTS HAVE TO SAY</h1>
+		<div class="row">
+			<div class="test_text">
+				<img src="images/rabbit.png" class="rounded-circle test_image">
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="test_text">
+				<img src="images/rabbit.png" class="rounded-circle test_image">
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="test_text">
+				<img src="images/rabbit.png" class="rounded-circle test_image">
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="container-fluid about">
+		<div>
+			<h1>
+				ABOUT ME
+			</h1>
+		</div>
+		<div class="row">
+			<img src="images/school.png" class="col-md-6 about_img">
+			<div class="col-md-5 about_text"> 
+				<p>
+					Hi there. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="panel-footer">
+    <div class="container-fluid">
+      <a href="tel:410-602-5008" id="contact">
+      	<span>410-602-5008
+      	</span>
+      </a>
+      <a href="email:dimplesalins@gmail.com">
+      	<span>dimplesalins@gmail.com
+      	</span>
+      </a>
+      <div class="text-center">&copy; Copyright Dimple Salins 2020</div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script>
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		  document.getElementById("myForm").style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+		    modal.style.display = "none";
+		  }
+		}
+
+
+
+		function openForm() {
+		  document.getElementById("myForm").style.display = "block";
+		  document.getElementById("form_button").style.display = "none";
+		}
+
+		function closeForm() {
+		  document.getElementById("myForm").style.display = "none";
+		  document.getElementById("form_button").style.display = "block";
+		}
+	</script>
+
+</body>
+</html>
