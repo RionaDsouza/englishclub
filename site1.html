@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dimplesalins</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg fixed-top">
+					<a class="navbar-brand" href="site1.html">
+						<img src="images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+							DIMPLE SALINS
+					</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						    <ul class="navbar-nav navbar-right">
+						      <li class="nav-item active">
+						        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						      </li>
+						      <li class="nav-item">
+						        <a class="nav-link" href="#">Contact</a>
+						      </li>
+						      <li class="nav-item dropdown">
+						        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          Courses Offered
+						        </a>
+						        <div class="dropdown-menu menu-item" aria-labelledby="navbarDropdownMenuLink">
+						          <a class="dropdown-item" href="#card1">batch 1</a>
+						          <a class="dropdown-item" href="#card2">batch 2</a>
+						          <a class="dropdown-item" href="#card3">batch 3</a>
+						        </div>
+						      </li>
+						    </ul>
+						</div>
+					
+			</nav>
+		</div>
+	</header>
+
+
+<!--	 -->
+	
+
+	<div class="jumbotron">
+		<div class="alert alert-primary position-relative" role="alert">
+			<marquee behavior="scroll" direction="left">
+				A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+		    </marquee>
+		</div>
+	  <h1 class="display-4 main_head">Hello, world!</h1>
+	  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+	  <hr class="my-4">
+	  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+	  <a class="btn btn-primary btn-lg main_button" href="form.html" role="button">Learn more</a>
+	</div>
+
+	<div class="container-fluid courses">
+		<hr>
+		<div class="row courses_row">
+			<div class="col-md-6">
+				<img src="images/panda.png" class="course_icon">
+			</div>
+			<div class="card text-center col-md-5">
+			  <div class="card-body" id="card1">
+			    <h5 class="card-title">Special title treatment</h5>
+			    <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
+		</div>
+		<div class="row courses_row">
+			<div class="card text-center col-md-5">
+			  <div class="card-body" id="card2">
+			    <h5 class="card-title">Special title treatment</h5>
+			    <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
+			<div class="col-md-6">
+				<img src="images/giraffe.png" class="course_icon">
+			</div>
+		</div>
+		<div class="row courses_row">
+			<div class="col-md-6">
+				<img src="images/dog.png" class="course_icon">
+			</div>
+			<div class="card text-center col-md-5">
+			  <div class="card-body" id="card3">
+			    <h5 class="card-title">Special title treatment</h5>
+			    <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
+		</div>
+		
+	  
+	  </div>
+	<hr>
+
+	
+
+	<div class="container-fluid">
+
+		<div class="row gallery">
+			<div class="col-md-6">
+				<h1 id="gallery_title">Every picture tells a story...</h1>
+				<p>See our blah blah blah</p>
+				
+			</div>
+			<div id="carouselExampleCaptions" class="carousel slide carousel-fade col-md-6" data-ride="carousel">
+			  <div class="carousel-inner gallery_photos">
+			    <div class="carousel-item active">
+			    	<a href="gallery.html">
+			    		<img src="images/flower.jpeg" class="d-block w=100" width="100%" alt="...">
+			    		<div class="carousel-caption d-none d-md-block">
+	        				<h5 class="img_head">some caption</h5>
+			      			<p class="img_text">Click to view the full gallery!</p>
+	      				</div>
+			      		
+			    	</a>
+			    </div> 
+			    <div class="carousel-item">
+			    	<a href="gallery.html">
+			    		<img src="images/world.jpeg" class="d-block w=100" width="100%" alt="...">
+			    		<div class="carousel-caption d-none d-md-block">
+	        				<h5 class="img_head">some caption</h5>
+			      			<p class="img_text">Click to view the full gallery!</p>
+	      				</div>
+			      		
+			    	</a>
+			    </div>
+			    <div class="carousel-item">
+			    	<a href="gallery.html">
+			    		<img src="images/disney.jpg" class="d-block w=100" width="100%" alt="...">
+			      		<div class="carousel-caption d-none d-md-block">
+	        				<h5 class="img_head">some caption</h5>
+			      			<p class="img_text">Click to view the full gallery!</p>
+	      				</div>
+			    	</a>
+			    </div>
+			  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+		</div>
+		
+		
+	</div>
+	<img src="images/girls.jpg" class="girl">
+	<hr>
+
+	<div class="video_thumb">
+		<video width="500" controls>
+		  <source src="testimonials/video/wheat-field.mp4" type="video/mp4">
+		  <source src="mov_bbb.ogg" type="video/ogg">
+		  Your browser does not support HTML video.
+		</video>
+
+		<p>
+		Click here to view more!
+		<a href="testimonials/index.html" target="_blank">hear from the parents</a>.
+		</p>
+		
+	</div>
+	<hr>
+
+	<div class="container-fluid about">
+		<div>
+			<h1>
+				ABOUT ME
+			</h1>
+		</div>
+		<div class="row">
+			<img src="images/dimplenobg.png" class="col-md-6 about_img">
+			<div class="col-md-6"> 
+				<p>
+					Hi there. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="panel-footer">
+    <div class="container-fluid">
+      <div class="row foot_text">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun-Thurs: 11:15am - 10:00pm<br>
+          Fri: 11:15am - 2:30pm<br>
+          Sunday Holiday
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          7105 Reisterstown Road<br>
+          Baltimore, MD 21215
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright Dimple Salins 2020</div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>

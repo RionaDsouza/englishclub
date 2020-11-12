@@ -16,14 +16,21 @@ body {
 }
 .navbar-brand {
 	margin: 0px;
-	padding: 5px;
+	padding: 0px;
+	padding-left: 5px;
 }
-.navbar a:hover {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+li a:hover {
+	background-color: #000;
+	color: #99FF33;
 }
 .navbar a {
 	color: #000;
-	border-radius: 5px;
+}
+.navbar-toggler {
+	border: 1px solid black;
+}
+.navbar-toggler-icon {
+	color: black;
 }
 
 /* HEADER END */
@@ -113,7 +120,6 @@ body {
 
 }
 .gallery {
-	background-image: linear-gradient(#FFCCE5, #FFCCE5, #fff, #FFF);
 	min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -401,3 +407,10 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* GALLERY END */
+
+
+@media (max-width: 768px) {
+	.modal-content {
+		width: 90%;
+	}
+}
