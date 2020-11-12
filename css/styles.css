@@ -91,7 +91,7 @@ li a:hover {
 	margin-top: 5px;
 }
 .card-body {
-	background-image: linear-gradient(#FFCCFF, #ccffff);
+	background-image: linear-gradient(#fff, #ccffff);
 	padding: 0px;
 }
 .card {
