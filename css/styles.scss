@@ -1,0 +1,444 @@
+body {
+	  font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    /*background-image: linear-gradient(#FFFFCC, #FFCCE5); */
+}
+.heading {
+    font-size: 40px;
+    font-weight: 300;
+    padding: 20px;
+}
+/* HEADER START */
+.navbar_row {
+	text-align: right;
+}
+.navbar {
+	background-color: #FFD6D6;
+	padding: 0px;
+
+}
+button:hover {
+	background-color: #000;
+}
+.navbar-brand {
+	margin: 0px;
+	padding: 0px;
+	padding-left: 5px;
+}
+li a:hover {
+	font-size: 1.1em;
+}
+.navbar a {
+	color: #000;
+}
+.navbar-toggler {
+	border: 1px solid black;
+}
+.navbar-toggler-icon {
+	color: black;
+}
+
+/* HEADER END */
+
+
+
+/* BODY START */
+.container-fluid {
+	margin-right: auto;
+	margin-left: auto;
+
+}
+.alert {
+	border-top: 50px;
+	border-radius: 0px;
+	padding: 0px;
+	border: 0px;
+}
+.jumbotron {
+	background-image: linear-gradient(#FFCCFF, #99ffcc);
+	background-image: url("../images/books.jpg");
+	min-height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	padding-left: 0px;
+	padding-right: 0px;
+	text-align: center;
+}
+.jumbotron a:hover, .jumbotron a:active {
+	background-color: #ccffcc;
+	color: #000;
+	border: 1px solid #99FF33;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.jumbotron .main_button {
+	background-color: #99FF33;
+	color: #000;
+	border: 1px solid #449741;
+	position: sticky;
+	vertical-align: middle;
+	margin-right: auto;
+	margin-left: auto;
+	cursor: pointer;
+}
+.course_icon {
+	position: relative;
+}
+.courses {
+	margin-bottom: 20px;
+}
+.courses_row {
+	margin-top: 5px;
+}
+.card {
+	background-color: initial;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	border: none;
+}
+.card-title {
+	padding-bottom: 15px;
+	padding-top: 25px;
+}
+.card-text {
+	padding: 5px;
+}
+
+.card {
+  animation: fadeInAnimation ease 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+/* BODY END */
+/* ANIMATED TEXT START */
+.ml11 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+/* ANIMATED TEXT END */
+
+/* FOOTER START */
+
+.foot_text {
+	padding: 20px;
+}
+/* FOOTER END */
+
+
+/* FORM START */
+.form-group {
+	margin-right: auto;
+	margin-left: auto;
+	width: 50%;
+}
+/* FORM END */
+
+
+/* FORM START */
+.form-popup {
+	display: none;
+	position: relative;
+	top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 40%;
+	box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+}
+.form-container {
+	width: 100%;
+	padding: 10px;
+	padding-left: 50px;
+	padding-right: 50px; 
+	background-color: white;
+	border-radius: 8px;
+}
+.form-container label {
+	float: left;
+	clear: left;
+}
+.form-container input[type=text], 
+.form-container input[type=email], 
+.form-container input[type=tel] {
+	border: none;
+	border-bottom: 1px solid #000;
+	float: right;
+	clear: right;
+	max-width: 100px;
+}
+.form-container small {
+	clear: both;
+}
+.form-container input[type=text]:focus, 
+.form-container input[type=email]:focus, 
+.form-container input[type=tel]:focus {
+	outline: none;
+}
+.form-container .main_button:focus {
+	outline: none;
+	opacity: 1;
+}
+.form-group {
+	margin: 0px;
+}
+/* FORM END */
+
+
+/*FORM MODAL START*/
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+.close {
+  color: #000;
+  float: right;
+  font-size: 28px;
+}
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* FORM MODAL END*/
+
+/* GALLERY START */
+@media (max-width: 768px) {
+	.modal-content {
+		width: 95%;
+	}
+}
+
+// Carousel configuration parameters
+$n: 8;
+$item-width: 800px;
+$item-separation: 420px;
+$viewer-distance: 400px;
+
+// Derived variables
+$theta: 2 * 3.141592653589793 / $n; 
+$apothem: 482.842712474619px;
+
+.carousel {
+  padding: 20px;
+
+  perspective: $viewer-distance;
+  overflow: hidden;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > * {
+    flex: 0 0 auto;
+  }
+  
+  figure {
+    margin: 0;
+    
+    width: $item-width;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform-origin: 50% 50% (-$apothem);
+    
+    img {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 $item-separation / 2;
+      
+      opacity: 0.9;
+      
+      &:not(:first-of-type) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform-origin: 50% 50% (-$apothem);
+      }
+      
+      @for $i from 2 through $n {
+        &:nth-child(#{$i}) {
+          transform: rotateY(#{($i - 1) * $theta}rad);
+        }
+      }
+    }
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+    
+    button {
+      flex: 0 0 auto;
+      margin: 0 5px;
+      
+      cursor: pointer;
+      
+      color: #333;
+      background-color: #FFD6D6;
+      padding: 5px 10px;
+      border: none;
+    }
+  }
+  
+}
+/* GALLERY END */
+
+
+/* TESTIMONIALS START */
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #E4FFDF;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.mySlides .text_tes {
+  width: 70%;
+  color: #8E85BF;
+  font-size: 25px;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+.mySlides p {
+  padding-top: 30px;
+  color: #8E85BF;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+/* Next & previous buttons */
+.p_arrow, .n_arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.n_arrow {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Position the "previous button" to the left */
+.p_arrow {
+  position: absolute;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.p_arrow:hover, .n_arrow:hover {
+  color: #8E85BF;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #E4FFDF;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #658060;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #334030;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+// TESTIMONIALS END
+
+// ABOUT START
+
+.about {
+  background-color: #FEFFDB;
+  padding: 25px;
+}
+.about q {
+  padding: 25px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+// ABOUT END
