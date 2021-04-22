@@ -92,7 +92,8 @@ li a:hover {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  border: none; }
+  border: none;
+  height: 300px; }
 
 .card-title {
   padding-bottom: 15px;
@@ -102,9 +103,16 @@ li a:hover {
   padding: 5px; }
 
 .card {
-  animation: fadeInAnimation ease 10s;
+  animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; }
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 107%; }
+  .card:hover .course_icon {
+    width: 105%;
+    height: 105%; }
 
 @keyframes fadeInAnimation {
   0% {
@@ -114,8 +122,12 @@ li a:hover {
 /* BODY END */
 /* ANIMATED TEXT START */
 .ml11 {
+  color: #334030;
   font-weight: 700;
-  font-size: 3.5em; }
+  font-size: 3.5em;
+  background-color: #E4FFDF;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+  font-family: 'Architects Daughter', cursive; }
 
 .ml11 .text-wrapper {
   position: relative;
@@ -128,8 +140,8 @@ li a:hover {
   opacity: 0;
   position: absolute;
   left: 0;
-  height: 100%;
-  width: 3px;
+  height: 90%;
+  width: 1px;
   background-color: #fff;
   transform-origin: 0 50%; }
 
@@ -141,6 +153,13 @@ li a:hover {
   display: inline-block;
   line-height: 1em; }
 
+@media (max-width: 768px) {
+  .ml11 {
+    font-weight: 500;
+    font-size: 2em; }
+
+  .jumbotron {
+    min-height: 500px; } }
 /* ANIMATED TEXT END */
 /* FOOTER START */
 .foot_text {
@@ -283,11 +302,16 @@ li a:hover {
     .carousel nav button {
       flex: 0 0 auto;
       margin: 0 5px;
+      border-radius: 5px;
       cursor: pointer;
       color: #333;
       background-color: #FFD6D6;
       padding: 5px 10px;
       border: none; }
+    .carousel nav button:hover {
+      color: #FFD6D6;
+      background-color: #805757;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 /* GALLERY END */
 /* TESTIMONIALS START */
@@ -363,6 +387,8 @@ li a:hover {
 
 /* Add a background color to the active dot/circle */
 .active, .dot:hover {
+  height: 11px;
+  width: 11px;
   background-color: #334030; }
 
 /* Add an italic font style to all quotes */

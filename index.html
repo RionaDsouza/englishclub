@@ -9,7 +9,9 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Raleway:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
@@ -52,7 +54,7 @@
 
 	<div class="jumbotron">
 		
-		<br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br>
 		<h1 class="ml11">
 			<span class="text-wrapper">
 			  <span class="line line1"></span>
@@ -91,7 +93,7 @@
     </div>
 
 	<div class="container courses" id="courses">
-		<div class="heading">What you learn</div>
+		<div class="heading">Learn to</div>
 		<div class="row courses_row text-center">
 			<div class="col-md-3">
 				<div class="card text-center" style="background-color: #FDFFB6;">
@@ -151,8 +153,7 @@
 
 <br>
 	<div class="heading">Gallery</div>
-	<div class="container-fluid" style="background-color: #CDFBFF;">
-		<br>
+	<div class="container-fluid">
 		<div class="carousel">
 			<figure>
 			  <img src="https://source.unsplash.com/7mUXaBBrhoA/800x533" alt="">
@@ -172,8 +173,8 @@
 	</div>
 
 	<div class="container-fluid">
-		<br>
-		<div class="heading">Testimonials</div>
+		<br><br>
+		<div class="heading" style="background-image: url(images/flora.png); background-size: 50%;">Testimonials</div>
 		<div class="slideshow-container">
 
 			<div class="mySlides">
@@ -203,7 +204,7 @@
 			</div>
 	</div>
 	<div class="container">
-		<div class="heading">About Me</div>
+		<div class="heading" style="background-image: url(images/divider.png);">About Me</div>
 		<div class="row">
 			<div class="col-md-4">
 				<img src="images/dimple.jpg" alt="" width="100%">
@@ -355,7 +356,7 @@
 			targets: '.ml11 .letter',
 			opacity: [0,1],
 			easing: "easeOutExpo",
-			duration: 600,
+			duration: 3000,
 			offset: '-=775',
 			delay: (el, i) => 34 * (i+1)
 		}).add({
