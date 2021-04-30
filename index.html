@@ -52,7 +52,7 @@
 <!--	 -->
 	
 
-	<div class="jumbotron">
+	<div class="jumbotron zoom">
 		
 		<br><br><br><br><br><br><br><br>
 		<h1 class="ml11">
@@ -91,7 +91,7 @@
 		  </div>
 		</div> -->
     </div>
-
+<br><br><br><br><br>
 	<div class="container courses" id="courses">
 		<div class="heading">Learn to</div>
 		<div class="row courses_row text-center">
@@ -156,14 +156,14 @@
 	<div class="container-fluid">
 		<div class="carousel">
 			<figure>
-			  <img src="https://source.unsplash.com/7mUXaBBrhoA/800x533" alt="">
-			  <img src="https://source.unsplash.com/bjhrzvzZeq4/800x533" alt="">
-			  <img src="https://source.unsplash.com/EbuaKnSm8Zw/800x533" alt="">
-			  <img src="https://source.unsplash.com/kG38b7CFzTY/800x533" alt="">
-			  <img src="https://source.unsplash.com/nvzvOPQW0gc/800x533" alt="">
-			  <img src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="">
-			  <img src="https://source.unsplash.com/1FWICvPQdkY/800x533" alt="">
-			  <img src="https://source.unsplash.com/VkwRmha1_tI/800x533" alt="">
+			  <img src="images/doggy.jpg" alt="">
+			  <img src="images/pink.jpg" alt="">
+			  <img src="images/game.jpg" alt="">
+			  <img src="images/sword.jpg" alt="">
+			  <img src="images/doggy.jpg" alt="">
+			  <img src="images/pink.jpg" alt="">
+			  <img src="images/game.jpg" alt="">
+			  <img src="images/sword.jpg" alt="">
 			</figure>
 			<nav>
 			  <button class="nav prev">Prev</button>
@@ -219,17 +219,66 @@
 
 
 	<footer class="panel-footer">
-    <div class="container-fluid">
-      <a href="tel:410-602-5008" id="contact">
-      	<span>410-602-5008
-      	</span>
-      </a>
-      <a href="email:dimplesalins@gmail.com">
-      	<span>dimplesalins@gmail.com
-      	</span>
-      </a>
-      <div class="text-center">&copy; Copyright Dimple Salins 2020</div>
-    </div>
+    <!-- Contact Form -->
+	<div id="contactForm"></div>
+	<div>
+	<div class="container-fluid">
+		<div class="contact-parent">
+			<div class="contact-child child1">
+				<p>
+					<i class="fas fa-map-marker-alt"></i> Address <br />
+					<span> Ash Lane 110
+						<br />
+						London, UK
+					</span>
+				</p>
+
+				<p>
+					<i class="fas fa-phone-alt"></i> Let's Talk <br />
+					<span> 0787878787</span>
+				</p>
+
+				<p>
+					<i class=" far fa-envelope"></i> General Support <br />
+					<span>andreea@andreeabunget.co.uk</span>
+				</p>
+			</div>
+
+			<div class="contact-child child2">
+				
+					<h2>Drop in your details!</h2>
+					<h3>
+						<span id="confirm">
+					</h3>
+
+					<div class="col">
+						<input class="textbox" type="text" placeholder="First Name">
+						<span class="focus-border"></span>
+					</div>
+					<br><br>
+					<div class="col">
+						<input class="textbox" type="text" placeholder="Last Name">
+						<span class="focus-border"></span>
+					</div>
+				<br><br>
+					<div class="col">
+						<input class="textbox" type="text" placeholder="Email">
+						<span class="focus-border"></span>
+					</div>
+					<br><br>
+					<div class="col">
+						<input class="textbox" type="text" placeholder="Message">
+						<span class="focus-border"></span>
+					</div>
+
+
+					
+					<div class="inside-contact">
+					<input type="submit" id="btn_send" value="SEND">
+				</div>
+			</div>
+		</div>
+	</div>
   </footer>
 
 
@@ -366,6 +415,35 @@
 			easing: "easeOutExpo",
 			delay: 1000
 		});
+
+		// card fade in
+		$(document).on("scroll", function() {
+			var pageTop = $(document).scrollTop();
+			var pageBottom = pageTop + $(window).height();
+			var cards = $(".card");
+
+			for (var i = 0; i < cards.length; i++) {
+				var card = cards[i];
+
+				if ($(card).position().top < pageBottom) {
+				$(card).addClass("visible");
+				} else {
+				$(card).removeClass("visible");
+				}
+			}
+			});
+
+			// jumbotron zoom
+			
+			$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+				$(".jumbotron").css({
+					transform: 'translate3d(0%, -'+(scroll/100)+'%, 0) scale('+(100 + scroll/12)/100+')',
+					//Blur suggestion from @janwagner: https://codepen.io/janwagner/ in comments
+					//"-webkit-filter": "blur(" + (scroll/200) + "px)",
+					//filter: "blur(" + (scroll/200) + "px)"
+				});
+			});
 
 	</script>
 	

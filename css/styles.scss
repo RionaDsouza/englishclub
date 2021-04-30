@@ -56,7 +56,7 @@ li a:hover {
 }
 .jumbotron {
 	background-image: linear-gradient(#FFCCFF, #99ffcc);
-	background-image: url("../images/books.jpg");
+	background-image: url("../images/book.jpg");
 	min-height: 700px;
   background-attachment: fixed;
   background-position: center;
@@ -100,18 +100,25 @@ li a:hover {
 	margin-bottom: 10px;
 	border: none;
   height: 300px;
+
+  opacity: 0;
+  transform: translate(0, 30vh);
+  transition: all 1s;
 }
+
+.card.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 .card-title {
+  font-size: 1.3em;
+  font-weight: bold;
 	padding-bottom: 15px;
 	padding-top: 25px;
 }
 .card-text {
 	padding: 5px;
-}
-.card {
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -120,14 +127,6 @@ li a:hover {
       width: 105%;
       height: 105%;
     }
-}
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
 }
 /* BODY END */
 /* ANIMATED TEXT START */
@@ -347,16 +346,22 @@ $apothem: 482.842712474619px;
       margin: 0 5px;
       border-radius: 5px;
       cursor: pointer;
+      border-radius: 25px;
       
-      color: #333;
-      background-color: #FFD6D6;
+      color: #fff;
+      background-color: #805757;
       padding: 5px 10px;
-      border: none;
+      transition:0.2s;
+      border:2px solid #805757;
     }
     button:hover {
-      color: #FFD6D6;
-      background-color: #805757;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color:#fff;
+      color:#805757;
+      transition:0.2s;
+    }
+    button:active {
+      border: none;
+      outline: none;
     }
   }
   
@@ -468,3 +473,143 @@ q {font-style: italic;}
   font-size: 20px;
 }
 // ABOUT END
+
+
+/* Contact Form */
+
+.contact-parent{
+  display:flex;
+  margin:80px 0;
+}
+
+.contact-child{
+  display:flex;
+  flex:1;
+  box-shadow:0px 0px 10px -2px rgba(0,0,0,0.75);
+}
+
+.child1{
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
+  background-size:cover;
+  display:flex;
+  flex-direction:column;
+  text-align: left;
+  justify-content:space-around;
+  color:#fff;
+  padding:100px 0;
+}
+
+.child1 p{
+  padding-left:20%;
+  font-size:20px;
+  text-shadow:0px 0px 2px #000;
+}
+
+.child1 p span{
+  font-size:16px;
+  color:#66E18E;
+}
+
+.child2{
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+  background-color: #FFD6D6  ;
+}
+
+.inside-contact{
+  width:90%;
+  margin:0 auto;
+}
+
+.inside-contact h2{
+  text-transform:uppercase;
+  text-align:center;
+  margin-top:50px;
+}
+
+.inside-contact h3{
+  text-align:center;
+  font-size:16px;
+  color:#0085e2;
+}
+
+.inside-contact input, .inside-contact textarea{
+  width:100%;
+  background-color:none;
+  border:1px solid rgba(0,0,0,0.48);
+  padding:5px 10px;
+  margin-bottom:20px;
+}
+
+.inside-contact input[type=submit]{
+  background-color:#805757;
+  color:#fff;
+  transition:0.2s;
+  border:2px solid #805757;
+  margin:30px 0;
+  width: 40%;
+  border-radius: 25px;
+}
+
+.inside-contact input[type=submit]:hover{
+  background-color:#fff;
+  color:#805757;
+  transition:0.2s;
+}
+
+@media screen and (max-width:991px){
+  .contact-parent{
+      display:block;
+      width:100%;
+  }
+
+  .child1{
+      display:none;
+  }
+
+  .child2{
+      background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
+      background-size:cover;
+  }
+
+  .inside-contact input, .inside-contact textarea{
+      background-color:#fff;
+  }
+}
+
+.col {
+	margin-top: 12px;
+	display: inline-block;
+	position: relative;
+}
+
+input[type="text"] {
+  background-color: inherit;
+}
+.textbox {
+	border: 0;
+	padding: 2px 0;
+	border-bottom: 1px solid #ccc;
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: #333;
+	width: 275px;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+}
+.textbox ~ .focus-border{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #3399FF;
+	transition: 0.4s;
+}
+.textbox:focus{
+	outline: none;
+}
+.textbox:focus ~ .focus-border{
+	width: 100%;
+	transition: 0.4s;
+}
