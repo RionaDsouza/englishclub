@@ -88,7 +88,8 @@ li a:hover {
   height: 300px;
   opacity: 0;
   transform: translate(0, 20vh);
-  transition: all 1s; }
+  transition: all 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .card.visible {
   opacity: 1;
@@ -102,9 +103,6 @@ li a:hover {
 
 .card-text {
   padding: 5px; }
-
-.card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .card1 {
   background-image: linear-gradient(to bottom, #fdffb6, #fff0b7, #ffe4c0, #ffdbcc, #ffd6d6); }
