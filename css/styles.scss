@@ -383,8 +383,9 @@ $apothem: 482.842712474619px;
   clear: both;
   width: 40%;
   position: relative;
-  background-image: linear-gradient(to left top, #9bf6ff, #a4f1ff, #b1ebff, #bfe6ff, #cce0ff, #d5e1ff, #dee1ff, #e6e2ff, #ece9ff, #f3f0ff, #f9f8ff, #ffffff);  text-align: right;
+  // background-image: linear-gradient(to left top, #9bf6ff, #a4f1ff, #b1ebff, #bfe6ff, #cce0ff, #d5e1ff, #dee1ff, #e6e2ff, #ece9ff, #f3f0ff, #f9f8ff, #ffffff);  text-align: right;
   transition: background-color 0.6s ease;
+  background-color: #fff;
   border-radius: 10px;
 }
 /* Slides */
