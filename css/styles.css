@@ -157,8 +157,9 @@ li a:hover {
     font-size: 2em; }
 
   .jumbotron {
-    min-height: 500px;
-    background-image: url("../images/gradient2.png"); } }
+    background-image: url("../images/gradient2.png");
+    background-size: cover;
+    min-height: 300px; } }
 /* ANIMATED TEXT END */
 /* FOOTER START */
 .foot_text {
