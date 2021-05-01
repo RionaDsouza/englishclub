@@ -7,7 +7,8 @@ body {
 .heading {
   font-size: 40px;
   font-weight: 300;
-  padding: 20px; }
+  padding: 20px;
+  color: #402B2B; }
 
 /* HEADER START */
 .navbar_row {
@@ -16,9 +17,6 @@ body {
 .navbar {
   background-color: #FFD6D6;
   padding: 0px; }
-
-button:hover {
-  background-color: #000; }
 
 .navbar-brand {
   margin: 0px;
@@ -30,12 +28,6 @@ li a:hover {
 
 .navbar a {
   color: #000; }
-
-.navbar-toggler {
-  border: 1px solid black; }
-
-.navbar-toggler-icon {
-  color: black; }
 
 /* HEADER END */
 /* BODY START */
@@ -165,7 +157,8 @@ li a:hover {
     font-size: 2em; }
 
   .jumbotron {
-    min-height: 500px; } }
+    min-height: 500px;
+    background-image: url("../images/gradient2.png"); } }
 /* ANIMATED TEXT END */
 /* FOOTER START */
 .foot_text {
@@ -329,10 +322,14 @@ li a:hover {
 /* TESTIMONIALS START */
 /* Slideshow container */
 .slideshow-container {
-  width: 60%;
-  margin: auto;
+  float: right;
+  clear: both;
+  width: 40%;
   position: relative;
-  background-image: linear-gradient(to right top, #cdfbff, #cefdf8, #d2fff0, #d9ffe7, #e4ffdf); }
+  background-image: linear-gradient(to left top, #9bf6ff, #a4f1ff, #b1ebff, #bfe6ff, #cce0ff, #d5e1ff, #dee1ff, #e6e2ff, #ece9ff, #f3f0ff, #f9f8ff, #ffffff);
+  text-align: right;
+  transition: background-color 0.6s ease;
+  border-radius: 10px; }
 
 /* Slides */
 .mySlides {
@@ -343,7 +340,7 @@ li a:hover {
 .mySlides .text_tes {
   width: 70%;
   color: #8E85BF;
-  font-size: 25px;
+  font-size: 1.2em;
   margin: auto;
   font-family: 'Montserrat', sans-serif; }
 
@@ -354,36 +351,37 @@ li a:hover {
   font-family: 'Montserrat', sans-serif; }
 
 /* Next & previous buttons */
-.p_arrow, .n_arrow {
+a.p_arrow, a.n_arrow {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   margin-top: -30px;
   padding: 16px;
-  color: #888;
+  color: #8E85BF;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none; }
 
 /* Position the "next button" to the right */
-.n_arrow {
+a.n_arrow {
   position: absolute;
   right: 0;
   border-radius: 3px 0 0 3px; }
 
 /* Position the "previous button" to the left */
-.p_arrow {
+a.p_arrow {
   position: absolute;
   left: 0;
   border-radius: 3px 0 0 3px; }
 
 /* On hover, add a black background color with a little bit see-through */
-.p_arrow:hover, .n_arrow:hover {
-  color: #8E85BF; }
+a.p_arrow:hover, a.n_arrow:hover {
+  color: #5F5980; }
 
 /* The dot/bullet/indicator container */
 .dot-container {
+  clear: both;
   text-align: center;
   padding: 20px;
   background: none; }
@@ -394,7 +392,7 @@ li a:hover {
   height: 10px;
   width: 10px;
   margin: 0 2px;
-  background-color: #658060;
+  background-color: #CDFBFF;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease; }
@@ -403,7 +401,7 @@ li a:hover {
 .active, .dot:hover {
   height: 11px;
   width: 11px;
-  background-color: #334030; }
+  background-color: #9BF6FF; }
 
 /* Add an italic font style to all quotes */
 q {
@@ -413,13 +411,22 @@ q {
 .author {
   color: cornflowerblue; }
 
+@media (max-width: 768px) {
+  .slideshow-container {
+    width: 90%;
+    margin: auto;
+    float: none; }
+
+  .mySlides .text_tes {
+    width: 90%;
+    font-size: 1em; } }
 .about {
   background-color: #FEFFDB;
   background-image: url(../images/about1.png);
   background-size: cover;
   padding: 25px;
   border-radius: 15px;
-  min-height: 500px; }
+  min-height: 600px; }
 
 .about img {
   margin: auto; }
@@ -484,10 +491,10 @@ q {
 .inside-contact h3 {
   text-align: center;
   font-size: 16px;
-  color: #0085e2; }
+  color: #cdfbff; }
 
 .inside-contact input, .inside-contact textarea {
-  width: 100%;
+  width: 80%;
   background-color: none;
   border: 1px solid rgba(0, 0, 0, 0.48);
   padding: 5px 10px;
@@ -555,5 +562,119 @@ input[type="text"] {
 .textbox:focus ~ .focus-border {
   width: 100%;
   transition: 0.4s; }
+
+/* LOGIN START */
+.login_page {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 610px; }
+
+.container_login {
+  margin: auto;
+  position: relative;
+  width: 60%;
+  height: 450px;
+  margin-top: 50px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background-color: #fff; }
+
+.leftside {
+  float: left;
+  width: 50%;
+  height: 100%; }
+
+.rightside {
+  float: right;
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to left top, #9bf6ff, #a4f1ff, #b1ebff, #bfe6ff, #cce0ff, #d5e1ff, #dee1ff, #e6e2ff, #ece9ff, #f3f0ff, #f9f8ff, #ffffff);
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px; }
+
+.loginbox {
+  padding: 60px; }
+
+.login_img img {
+  width: 100%;
+  margin-top: 70px; }
+
+.login_head {
+  font-size: 1.7em;
+  margin: 0px;
+  color: #606060;
+  font-family: 'Josefin Sans', sans-serif; }
+
+.login_title {
+  margin-top: 20px;
+  font-size: 0.7em;
+  margin-bottom: 50px;
+  color: #606060; }
+
+.login_details {
+  width: 100%;
+  margin-top: 10px;
+  border-bottom: 1px solid #606060;
+  float: left; }
+
+img.detail_img {
+  vertical-align: baseline;
+  float: right;
+  clear: right; }
+
+.login_details input {
+  border: 0px;
+  padding: 7px;
+  float: left; }
+
+input[type=text]:focus {
+  border: none;
+  outline: none; }
+
+input[type=password]:focus {
+  border: none;
+  outline: none; }
+
+input[type=email]:focus {
+  border: none;
+  outline: none; }
+
+input[type=date]:focus {
+  border: none;
+  outline: none; }
+
+input[type=tel]:focus {
+  border: none;
+  outline: none; }
+
+.sign {
+  text-decoration: none;
+  clear: both; }
+
+.button {
+  flex: 0 0 auto;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #cdfbff;
+  color: #333;
+  transition: 0.2s;
+  border: none;
+  border-radius: 25px; }
+
+.button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+  background-image: linear-gradient(to right top, #cdfbff, #cefdf8, #d2fff0, #d9ffe7, #e4ffdf);
+  color: #805757;
+  transition: 0.2s; }
+
+.button:active {
+  border: none;
+  outline: none; }
+
+/* LOGIN END */
 
 /*# sourceMappingURL=styles.css.map */
