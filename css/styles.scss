@@ -769,5 +769,84 @@ input[type=tel]:focus {
   border: none;
   outline: none;
 }
+
+@media(max-width: 768px) {
+	.left_container {
+    background-image: linear-gradient(to left top, #9bf6ff, #a4f1ff, #b1ebff, #bfe6ff, #cce0ff, #d5e1ff, #dee1ff, #e6e2ff, #ece9ff, #f3f0ff, #f9f8ff, #ffffff);
+		width: 95%;
+		height: auto;
+		overflow: unset;
+		position: relative;
+		float: none;
+	}
+	.right_container {
+		margin-top: 8px;
+		width: 95%;
+		float: none;
+	}
+	.details_card {
+		width: 85%;
+		float: none;
+		margin: auto;
+		margin-top: 5px;
+	}
+	.counselor_image img {
+		width: 150px;
+		height: 150px;
+		margin: auto;
+	}
+	.counselor_details {
+		margin: auto;
+		width: 100%;
+	}
+	.container_add1 {
+		width: 95%;
+	}
+	.container_add2 {
+		width: 95%;
+	}
+	.rightside {
+		display: none;
+	}
+	.leftside {
+		width: 100%;
+    background-image: linear-gradient(to left top, #9bf6ff, #a4f1ff, #b1ebff, #bfe6ff, #cce0ff, #d5e1ff, #dee1ff, #e6e2ff, #ece9ff, #f3f0ff, #f9f8ff, #ffffff);
+	}
+	.container_register {
+		width: 95%;
+	}
+	.register {
+	    padding: 20px;
+	}
+	.container_login {
+	    width: 95%;
+	}
+
+  input[type=text] {
+    border: none;
+    outline: none;
+    background-color: inherit;
+  }
+  input[type=password] {
+    border: none;
+    outline: none;
+    background-color: inherit;
+  }
+  input[type=email] {
+    border: none;
+    outline: none;
+    background-color: inherit;
+  }
+  input[type=date] {
+    border: none;
+    outline: none;
+    background-color: inherit;
+  }
+  input[type=tel] {
+    border: none;
+    outline: none;
+    background-color: inherit;
+  }
+}
 /* LOGIN END */
 
