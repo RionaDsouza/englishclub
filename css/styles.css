@@ -149,7 +149,10 @@ li a:hover {
   .jumbotron {
     background-image: url("../images/gradient2.png");
     background-size: cover;
-    min-height: 300px; } }
+    min-height: 300px; }
+
+  .mobile {
+    display: none; } }
 /* ANIMATED TEXT END */
 /* FOOTER START */
 .foot_text {
