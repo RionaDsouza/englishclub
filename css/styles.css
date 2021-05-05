@@ -2,6 +2,7 @@ body {
   font-family: 'Raleway', sans-serif;
   text-align: center;
   font-size: 15px;
+  background-color: #fcf6f6;
   /*background-image: linear-gradient(#FFFFCC, #FFCCE5); */ }
 
 .heading {
@@ -411,7 +412,7 @@ q {
     font-size: 1em; } }
 .about {
   background-color: #FEFFDB;
-  background-image: url(../images/about1.png);
+  background-image: url(../images/about3.png);
   background-size: cover;
   padding: 25px;
   border-radius: 15px;
