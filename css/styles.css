@@ -328,7 +328,8 @@ li a:hover {
 .mySlides {
   display: none;
   padding: 40px;
-  text-align: center; }
+  text-align: center;
+  transition: transform 0.5s; }
 
 .mySlides .text_tes {
   width: 70%;
