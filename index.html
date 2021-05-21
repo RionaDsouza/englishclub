@@ -77,7 +77,10 @@
 		  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 		
     </div>
-<br><br><br><br><br><div class="mobile"> <br><br><br><br><br><br></div>
+	<main role="main">
+		<div class="content">
+		</div>
+<br><br><br><div class="mobile"><br><br><br><br><br><br><br><br></div>
 	<div class="container courses" id="courses" style="min-height: 500px;">
 		<div class="heading">Learn to</div>
 		<div class="row courses_row text-center animation-element bounce-up">
@@ -216,39 +219,23 @@
 	</div>
 	<br><br><br>
 
-	<footer class="panel-footer" id="contact">
+	<div id="contact">
     <!-- Contact Form -->
 	<div id="contactForm"></div>
 	<div>
-	<div class="container">
+	<div class="container-fluid">
 		<div class="contact-parent">
 			<div class="contact-child child1">
-				<p>
-					<i class="fas fa-map-marker-alt"></i> Address <br />
-					<span> Ash Lane 110
-						<br />
-						London, UK
-					</span>
-				</p>
-
-				<p>
-					<i class="fas fa-phone-alt"></i> Let's Talk <br />
-					<span> 0787878787</span>
-				</p>
-
-				<p>
-					<i class=" far fa-envelope"></i>Email<br />
-					<span>andreea@andreeabunget.co.uk</span>
-				</p>
+				
 			</div>
 
 			<div class="contact-child child2">
 				
-					<h2>Drop in your details!</h2>
-					<h3>
-						<span id="confirm">
-					</h3>
-
+				<h2>Drop in your details!</h2>
+				<h3>
+					<span id="confirm">
+				</h3>
+				<form action="">
 					<div class="col">
 						<input class="textbox" type="text" placeholder="Child's Name" required>
 						<span class="focus-border"></span>
@@ -258,7 +245,7 @@
 						<input class="textbox" type="text" placeholder="Parent's Name" required>
 						<span class="focus-border"></span>
 					</div>
-				<br><br>
+					<br><br>
 					<div class="col">
 						<input class="textbox" type="text" placeholder="Number" required>
 						<span class="focus-border"></span>
@@ -272,11 +259,35 @@
 
 					
 					<div class="inside-contact">
-					<input type="submit" id="btn_send" value="SEND">
-				</div>
+						<input type="submit" id="btn_send" value="SEND">
+					</div>
+				</form>
+					
 			</div>
 		</div>
 	</div>
+</div>
+
+  <footer>
+	  <div>
+		<p>
+			<i class="fas fa-map-marker-alt"></i> Address <br />
+			<span> Ash Lane 110
+				<br />
+				London, UK |
+			</span>
+		</p>
+
+		<p>
+			<i class="fas fa-phone-alt"></i> Let's Talk <br />
+			<span> 0787878787 |</span>
+		</p>
+
+		<p>
+			<i class=" far fa-envelope"></i>Email<br />
+			<span>andreea@andreeabunget.co.uk |</span>
+		</p>
+	  </div>
   </footer>
 
 
@@ -287,16 +298,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 	<script>
-
-		function openForm() {
-		  document.getElementById("myForm").style.display = "block";
-		  document.getElementById("form_button").style.display = "none";
-		}
-
-		function closeForm() {
-		  document.getElementById("myForm").style.display = "none";
-		  document.getElementById("form_button").style.display = "block";
-		}
 
 		var
 			carousel = document.querySelector('.carousel'),
@@ -387,23 +388,6 @@
 			delay: 1000
 		});
 
-		// card fade in
-		$(document).on("scroll", function() {
-			var pageTop = $(document).scrollTop();
-			var pageBottom = pageTop + $(window).height();
-			var cards = $(".card");
-
-			for (var i = 0; i < cards.length; i++) {
-				var card = cards[i];
-
-				if ($(card).position().top < pageBottom) {
-				$(card).addClass("visible");
-				} else {
-				$(card).removeClass("visible");
-				}
-			}
-			});
-
 			// jumbotron zoom
 			
 			$(window).scroll(function() {
@@ -416,7 +400,7 @@
 				});
 			});
 
-			// animation
+			// fade-in
 			var $animation_elements = $('.animation-element');
 			var $window = $(window);
 

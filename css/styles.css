@@ -745,4 +745,7 @@ input[type=tel]:focus {
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px); }
 
+footer span {
+  display: inline; }
+
 /*# sourceMappingURL=styles.css.map */
